@@ -1,0 +1,206 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.story__card {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  height: 40rem;
+  width: 40rem;
+  margin-left: 5rem;
+  margin-top: 20rem;
+}
+
+.story__cards {
+  display: flex;
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 80rem;
+  background-color: gray;
+  border-radius: 90%;
+  height: 15rem;
+  width: 15rem;
+  font-size: 8rem;
+}
+
+.mijn__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35rem;
+  font-family: "Playfair Display", serif;
+}
+
+.banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  height: 20rem;
+  width: 60rem;
+  margin-top: -40rem;
+  margin-left: 106rem;
+}
+
+.text__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 60rem;
+  font-size: 20px;
+  margin-top: 36rem;
+  flex-shrink: 1;
+}
+
+.Audio__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5%;
+  border: none;
+  height: 4rem;
+  width: 20rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-top: 19rem;
+  margin-left: 107rem;
+  font-size: 1.8rem;
+}
+
+.source__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 153rem;
+  margin-top: -3rem;
+  text-align: end;
+  font-size: 2.8rem;
+}
+
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 62.5rem) {
+  body {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .profile__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    background-color: gray;
+    border-radius: 90%;
+    height: 10rem;
+    width: 10rem;
+    font-size: 5rem;
+  }
+  .banner__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 18rem;
+    width: 50rem;
+    margin-left: 0rem;
+    gap: 1rem;
+    margin-right: -11rem;
+    margin-top: -45rem;
+  }
+  .text__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 60rem;
+    font-size: 20px;
+    margin-top: 40rem;
+    flex-shrink: 2;
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  .Audio__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    border: none;
+    height: 4rem;
+    width: 12rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 28rem;
+    gap: 1rem;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+  }
+  .source__button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    text-align: end;
+    font-size: 2.8rem;
+  }
+  a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+  .story__card {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+    top: 50rem;
+    margin-left: 5rem;
+  }
+  .story__cards {
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+  }
+  .mijn__info {
+    display: flex;
+    padding-top: 80rem;
+    grid-row: 2;
+    grid-column: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
