@@ -1,0 +1,69 @@
+@use "./abstracts/reset";
+@use "./abstracts/vars";
+
+
+body{
+overflow: hidden;
+}
+.card-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    height: 40rem;
+    width: 40rem;
+    margin-left: 5rem;
+    margin-top: 20rem;
+    overflow: hidden;
+}
+
+.cards{
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile__pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 80rem;
+    background-color: gray;
+    border-radius: 90%;
+    height: 15rem;
+    width: 15rem;
+    font-size: 8rem;
+}
+
+.mijn__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 37rem;
+    font-family: vars.$font-family;
+}
+
+.banner__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 20rem;
+    width: 60rem;
+    margin-top: -40rem;
+    margin-left: 117rem;
+
+}
+
+.text__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 20rem;
+    width: 60rem;
+    
+}

@@ -1,0 +1,49 @@
+@use "./reset";
+
+@media screen and (max-width: 62.5%) {
+
+    
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 2rem;
+      margin-top: 10rem;
+      height: auto;
+      width: auto;
+      overflow: hidden;
+      grid-template-rows: auto 1fr;
+      gap: 1rem;
+    }
+  
+    .profile__pic {
+      display: flex;
+      height: 10rem;
+      width: 10rem;
+      font-size: 4rem;
+      grid-row: 1;
+      grid-column: 1;
+    }
+  
+    .mijn__info {
+        display: flex;
+      padding-top: 20rem;
+      grid-row: 2;
+      grid-column: 1;
+    }
+  
+    .banner__container {
+      margin-top: 0;
+      margin-left: 0;
+      height: 15rem;
+      width: auto;
+      grid-row: 1 / span 2;
+      grid-column: 2;
+    }
+  
+    .text__container {
+      height: 15rem;
+      width: auto;
+      grid-row: 1 / span 2;
+      grid-column: 3;
+    }
+  }
+  
