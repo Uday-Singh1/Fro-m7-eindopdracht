@@ -1,3 +1,7 @@
 @use "./base.scss";
 @use "./abstracts/reset";
+@use "./abstracts/mixins";
 @use "./abstracts/mediaqueries";
+@use "./abstracts/colors";
+@use "./components/header.scss";
+@use "./components/details.scss";

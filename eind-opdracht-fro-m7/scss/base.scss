@@ -1,69 +1,191 @@
 @use "./abstracts/reset";
 @use "./abstracts/vars";
+@use "./abstracts/colors";
+@use "./abstracts/mixins";
 
-
-body{
-overflow: hidden;
-}
-.card-container {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    height: 40rem;
-    width: 40rem;
-    margin-left: 5rem;
-    margin-top: 20rem;
-    overflow: hidden;
-}
-
-.cards{
-    display: flex;
-    background-color: gray;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.profile__pic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 80rem;
-    background-color: gray;
-    border-radius: 90%;
-    height: 15rem;
-    width: 15rem;
-    font-size: 8rem;
-}
-
-.mijn__info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 37rem;
-    font-family: vars.$font-family;
-}
-
-.banner__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
-    height: 20rem;
-    width: 60rem;
-    margin-top: -40rem;
-    margin-left: 117rem;
+body {
+  height: 100vh;
+  background: map-get(colors.$orange-yellow, "background");
+  padding: 3rem;
+  overflow-x: hidden;
 
 }
 
-.text__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
-    height: 20rem;
-    width: 60rem;
-    
+.section {
+  width: 100%;
+  height: 70vh;
+  background: map-get(colors.$white-back, "background");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    width: 100%;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  background: map-get(colors.$white-back, "background");
+
+
+}
+
+.Left__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Right__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+ 
+}
+
+
+.left__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40.9rem;
+  list-style: none;
+  gap: 2rem;
+  height: 0;
+  padding-top: 21rem;
+  padding-left: 1rem;
+}
+
+.left__card {
+  position: relative;
+  list-style: none;
+}
+
+
+
+.left__card::before {
+  position: absolute;
+  //content: "";
+  width: 100%;
+  height: 100%;
+  color: map-get(colors.$black-overlay, "background");
+  color: map-get(colors.$white, "color") !important;
+}
+
+// // .left__cards {
+// //   &:hover {
+// //     cursor: pointer;
+// //       transform:scale(1.1);
+// //     animation-duration: 5s;
+
+// //   }
+// }
+
+
+.date {
+  display: flex;
+  position: absolute;
+  color: map-get(colors.$white, "color");
+  top: 5%;
+  right: 5%;
+  font-family: vars.$font-family;
+
+}
+
+.title {
+  display: flex;
+  position: absolute;
+  width: 14rem;
+  font-size: 15px;
+  top: 70%;
+  color: map-get(colors.$white, "color");
+  font-family: vars.$font-family;
+  
+  
+
+}
+
+.img__sizes {
+  cursor: pointer;
+  list-style: none;
+  object-fit: cover;
+  display: flex;
+  height: 18rem;
+  width: 16rem;
+
+}
+
+
+
+.description__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 100%;
+  font-size: 20px;
+  z-index: 1;
+  font-family: vars.$font-family;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.Audio__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5%;
+  border: none;
+  height: 3rem;
+  width: 18rem;
+  //background-color: map-get(colors.$black, "background-color"); //black  //black
+  color: map-get(colors.$white, "color"); //white
+  background-color: red;
+  font-size: 1.4rem;
+  @include mixins.borders;
+}
+
+
+.source__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  cursor: pointer;
+  text-align: end;
+  font-size: 2.8rem;
+
+}
+
+a:link,
+a:visited {
+  color: map-get(colors.$full-black, "color"); //#000000
+  text-decoration: none;
+}
+
+footer {
+  background: map-get(colors.$white-back, "background"); //white
+  @include mixins.bottom-borders;
+  
+}
+
+.mijn__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: vars.$font-family;
 }

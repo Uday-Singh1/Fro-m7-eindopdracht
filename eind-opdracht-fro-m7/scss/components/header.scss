@@ -1,0 +1,28 @@
+@use "../abstracts/reset";
+@use "../abstracts/vars";
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
+
+
+.header {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: map-get(colors.$white-back, "background");
+    flex-grow: 1;
+    @include mixins.top-borders;
+    gap: 2rem;
+  }
+  
+  .header__happiness {
+    font-size: 4rem;
+    font-family: vars.$font-family;
+  }
+  
+  .description__header {
+    background-color: map-get(colors.$gray, "background-color");
+    margin-top: 10rem;
+    height: 26rem;
+    width: 100%;
+  }
